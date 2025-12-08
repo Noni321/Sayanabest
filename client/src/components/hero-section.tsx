@@ -1,7 +1,8 @@
 import { useLanguage } from "@/lib/language-context";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, MessageCircle, Shield, MapPin } from "lucide-react";
+import { Phone, MessageCircle, Shield, MapPin, CalendarCheck } from "lucide-react";
+import { BookingForm } from "@/components/booking-form";
 import heroImage from "@assets/1765212863974_1765216156068.jpg";
 
 const PHONE_NUMBER = "0554276643";
@@ -90,6 +91,22 @@ export function HeroSection() {
             <MessageCircle className="h-5 w-5" />
             {t("whatsapp")}
           </Button>
+
+          <BookingForm
+            trigger={
+              <Button
+                size="lg"
+                variant="outline"
+                className={`w-full sm:w-auto gap-3 h-14 px-8 text-lg font-semibold rounded-2xl bg-white/20 backdrop-blur-md text-white border border-white/30 shadow-xl transition-transform hover:scale-[1.02] ${
+                  isRTL ? "font-cairo flex-row-reverse" : "font-inter"
+                }`}
+                data-testid="button-book-now-hero"
+              >
+                <CalendarCheck className="h-5 w-5" />
+                {t("bookNow")}
+              </Button>
+            }
+          />
         </div>
 
         <div 
