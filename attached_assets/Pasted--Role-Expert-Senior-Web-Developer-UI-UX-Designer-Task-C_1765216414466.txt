@@ -1,0 +1,52 @@
+**Role:** Expert Senior Web Developer & UI/UX Designer.
+
+**Task:** Create a stunning, high-performance, and aesthetic landing page for a Home Appliance Maintenance Service called **"صيانةبست" (SiyanahBest)**.
+
+**Key Requirements:**
+
+1.  **Brand Identity (Crucial):**
+    * **Website Name:**
+        * Arabic View: **صيانةبست**
+        * English View: **SiyanahBest**
+    * **Logo Style:** Minimalist and bold typography. The logo should appear in the Sticky Header.
+
+2.  **Language Selection (Entry Point):**
+    * The very first screen/overlay must be a sleek "Language Selector" (English vs. Arabic).
+    * Based on selection:
+        * **English:** Loads LTR layout with "SiyanahBest" branding.
+        * **Arabic:** Loads RTL layout with "صيانةبست" branding.
+
+3.  **Visual Style (Aesthetic):**
+    * **Theme:** Modern, clean, and "Aesthetic." Use a palette of Deep Blue, White, and subtle Silver/Grey accents.
+    * **UI Elements:** Rounded corners, glassmorphism effects on cards, and clean typography.
+    * **Speed:** The site must load instantly.
+
+4.  **Website Sections & Content:**
+
+    * **Header:** Sticky header with the logo **"صيانةبست"** and a clear "Call Now" button.
+    * **Hero Section:**
+        * Background: High-quality appliance repair images (attached).
+        * Headline (Arabic): "صيانةبست - الخيار الأفضل لإصلاح منزلك" (SiyanahBest - The best choice for your home repair).
+        * Sub-text: "Expert maintenance in Jeddah. Fast, reliable, and guaranteed."
+    * **Services Focus:**
+        * ACs, Washing Machines, Fridges.
+        * **Specific Washing Machine Issues:** Stains, drainage, noise, jammed door, vibration, leaks.
+    * **The Guarantee:**
+        * "30-Day Warranty." If the issue recurs, we fix it for free.
+    * **Brands We Service (Grid):**
+        * Whirlpool, Maytag, General Electric, Ariston, Samsung, Daewoo, Toshiba.
+    * **Floating Action Button (FAB):**
+        * Sticky WhatsApp/Call icon at bottom-right.
+        * Number: **0554276643**
+
+5.  **Content Data (Strictly Use This):**
+
+    * *Service Areas:* Jeddah (Entire City).
+    * *Phone:* 0554276643
+    * *Arabic Description:*
+        "خدمة صيانة واصلاح الاجهزة المنزلية في جدة. نوفر خدمة صيانة وإصلاح الأجهزة المنزلية في جدة بخبرة عالية وسرعة استجابة. نتعامل مع جميع الأعطال للمكيفات، الغسالات، الثلاجات... [Use full provided text]"
+
+**Instruction for Images:**
+I have attached images. Please integrate them into the Hero section and Service cards with a modern, aesthetic layout.
+
+**Generate the full code (HTML/Tailwind/React) focusing on the "صيانةبست" branding.**
