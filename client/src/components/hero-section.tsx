@@ -70,7 +70,7 @@ export function HeroSection() {
             onClick={() => window.open(`tel:${PHONE_NUMBER}`, "_self")}
             size="lg"
             className={`w-full sm:w-auto gap-3 h-14 px-8 text-lg font-semibold rounded-2xl bg-blue-600 border-blue-600 text-white shadow-xl shadow-blue-600/30 transition-transform hover:scale-[1.02] ${
-              isRTL ? "font-cairo" : "font-inter"
+              isRTL ? "font-cairo flex-row-reverse" : "font-inter"
             }`}
             data-testid="button-call-now-hero"
           >
@@ -83,7 +83,7 @@ export function HeroSection() {
             size="lg"
             variant="outline"
             className={`w-full sm:w-auto gap-3 h-14 px-8 text-lg font-semibold rounded-2xl bg-green-500/20 backdrop-blur-md text-white border border-green-400/50 shadow-xl transition-transform hover:scale-[1.02] ${
-              isRTL ? "font-cairo" : "font-inter"
+              isRTL ? "font-cairo flex-row-reverse" : "font-inter"
             }`}
             data-testid="button-whatsapp-hero"
           >

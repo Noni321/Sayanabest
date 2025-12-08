@@ -65,7 +65,7 @@ export function StickyHeader() {
                 isScrolled
                   ? "bg-blue-600 text-white border-blue-600"
                   : "bg-white/20 backdrop-blur-md text-white border border-white/30"
-              } ${isRTL ? "font-cairo" : "font-inter"}`}
+              } ${isRTL ? "font-cairo flex-row-reverse" : "font-inter"}`}
               data-testid="button-call-now-header"
             >
               <Phone className="h-4 w-4" />

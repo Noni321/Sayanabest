@@ -25,6 +25,12 @@ const translations = {
     washingIssues: "البقع، التصريف، الضوضاء، الباب المحشور، الاهتزاز، التسريبات",
     fridgeTitle: "صيانة الثلاجات",
     fridgeDesc: "إصلاح وصيانة جميع أنواع الثلاجات",
+    fridgeIssues: "عدم التبريد، تسرب المياه، أصوات غريبة، تراكم الثلج، مشاكل الباب",
+    cooling: "عدم التبريد",
+    waterLeak: "تسرب المياه",
+    strangeNoises: "أصوات غريبة",
+    iceBuildUp: "تراكم الثلج",
+    doorIssues: "مشاكل الباب",
     guaranteeTitle: "ضمان",
     guaranteeNumber: "30",
     guaranteeDays: "يوم",
@@ -67,6 +73,12 @@ const translations = {
     washingIssues: "Stains, Drainage, Noise, Jammed Door, Vibration, Leaks",
     fridgeTitle: "Refrigerator Maintenance",
     fridgeDesc: "Repair and maintenance of all refrigerator types",
+    fridgeIssues: "No Cooling, Water Leak, Strange Noises, Ice Build-up, Door Issues",
+    cooling: "No Cooling",
+    waterLeak: "Water Leak",
+    strangeNoises: "Strange Noises",
+    iceBuildUp: "Ice Build-up",
+    doorIssues: "Door Issues",
     guaranteeTitle: "Warranty",
     guaranteeNumber: "30",
     guaranteeDays: "Day",
@@ -112,8 +124,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+    const dir = language === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = dir;
     document.documentElement.lang = language;
+    document.documentElement.setAttribute("dir", dir);
+    document.body.dir = dir;
   }, [language]);
 
   const setLanguage = (lang: Language) => {

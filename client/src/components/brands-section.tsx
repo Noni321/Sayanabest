@@ -9,6 +9,11 @@ const brands = [
   { name: "Samsung", logo: "Samsung", icon: SiSamsung },
   { name: "Daewoo", logo: "Daewoo" },
   { name: "Toshiba", logo: "Toshiba" },
+  { name: "LG", logo: "LG" },
+  { name: "Bosch", logo: "Bosch" },
+  { name: "Siemens", logo: "Siemens" },
+  { name: "Haier", logo: "Haier" },
+  { name: "Hitachi", logo: "Hitachi" },
 ];
 
 export function BrandsSection() {
@@ -32,7 +37,7 @@ export function BrandsSection() {
           <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
           {brands.map((brand, index) => (
             <div
               key={brand.name}

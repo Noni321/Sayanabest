@@ -90,7 +90,7 @@ export function Footer() {
               <li>
                 <a 
                   href={`tel:${PHONE_NUMBER}`}
-                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+                  className={`flex items-center gap-3 text-gray-400 hover:text-white transition-colors ${isRTL ? "flex-row-reverse" : ""}`}
                   data-testid="link-footer-phone"
                 >
                   <Phone className="h-5 w-5 text-blue-500" />
@@ -102,17 +102,17 @@ export function Footer() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+                  className={`flex items-center gap-3 text-gray-400 hover:text-white transition-colors ${isRTL ? "flex-row-reverse" : ""}`}
                   data-testid="link-footer-whatsapp"
                 >
                   <MessageCircle className="h-5 w-5 text-green-500" />
                   <span>{t("whatsapp")}</span>
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-gray-400">
+              <li className={`flex items-center gap-3 text-gray-400 ${isRTL ? "flex-row-reverse" : ""}`} data-testid="text-footer-location">
                 <MapPin className="h-5 w-5 text-blue-500" />
                 <span className={isRTL ? "font-tajawal" : "font-inter"}>
-                  Jeddah, Saudi Arabia
+                  {isRTL ? "جدة، المملكة العربية السعودية" : "Jeddah, Saudi Arabia"}
                 </span>
               </li>
             </ul>

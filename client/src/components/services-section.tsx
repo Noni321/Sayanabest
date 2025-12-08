@@ -32,7 +32,7 @@ export function ServicesSection() {
       title: t("fridgeTitle"),
       description: t("fridgeDesc"),
       image: fridgeImage,
-      features: [],
+      features: [t("cooling"), t("waterLeak"), t("strangeNoises"), t("iceBuildUp"), t("doorIssues")],
     },
   ];
 

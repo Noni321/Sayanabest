@@ -60,7 +60,7 @@ export function GuaranteeSection() {
               {t("guaranteeText")}
             </p>
 
-            <div className="flex items-center justify-center lg:justify-start gap-3">
+            <div className={`flex items-center justify-center lg:justify-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-500/20 text-green-400">
                 <CheckCircle className="h-5 w-5" />
               </div>

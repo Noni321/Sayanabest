@@ -38,12 +38,16 @@ export function CoverageSection() {
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
-              {["North Jeddah", "South Jeddah", "Central Jeddah", "East Jeddah"].map((area) => (
+              {(isRTL 
+                ? ["شمال جدة", "جنوب جدة", "وسط جدة", "شرق جدة"] 
+                : ["North Jeddah", "South Jeddah", "Central Jeddah", "East Jeddah"]
+              ).map((area, index) => (
                 <span
                   key={area}
                   className={`px-4 py-2 bg-muted rounded-lg text-sm font-medium text-muted-foreground ${
                     isRTL ? "font-tajawal" : "font-inter"
                   }`}
+                  data-testid={`chip-coverage-area-${index}`}
                 >
                   {area}
                 </span>
