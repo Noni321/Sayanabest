@@ -1,0 +1,10 @@
+node_modules
+.git
+client
+server
+shared
+script
+*.md
+.env
+.env.local
+.env.*.local
